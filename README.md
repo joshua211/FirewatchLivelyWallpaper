@@ -3,3 +3,5 @@ A customizable live wallpaper for [Lively](https://github.com/rocksdanister/live
 
 All rights to the image belong to 
 [Firewatch Game](https://www.firewatchgame.com/).
+
+![](src/src/firewatch.gif)
