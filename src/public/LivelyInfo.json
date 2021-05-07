@@ -4,7 +4,9 @@
   "Desc": "Live and customizable firewatch wallpaper",
   "Author": "joshua211",
   "License": "https://www.firewatchgame.com/",
-  "Contact": "",
+  "Thumbnail": "thumbnail.png",
+  "Preview": "preview.gif",
+  "Contact": "https://github.com/joshua211/FirewatchLivelyWallpaper",
   "Type": 1,
   "FileName": "index.html",
   "IsAbsolutePath": false

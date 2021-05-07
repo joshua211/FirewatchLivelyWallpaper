@@ -6,12 +6,12 @@
   "showTime": {
     "type": "checkbox",
     "value": true,
-    "text": "Display time"
+    "text": "Show time"
   },
   "displayAtTop": {
     "type": "checkbox",
     "value": false,
-    "text": "Display time at the top of the screen"
+    "text": "Display at the top of the screen"
   },
   "showSeconds": {
     "type": "checkbox",
