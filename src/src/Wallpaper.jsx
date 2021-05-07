@@ -11,6 +11,7 @@ class Wallpaper extends Component {
       fontFamily: 0,
       fontSize: 2,
       displayAtTop: false,
+      units: 0,
     };
   }
 
@@ -30,7 +31,7 @@ class Wallpaper extends Component {
 
     setInterval(() => {
       this.setState({
-        curTime: new Date().toLocaleTimeString([], {
+        curTime: new Date().toLocaleTimeString([this.getLocality()], {
           timeStyle: this.state.showSeconds ? "medium" : "short",
         }),
       });
@@ -43,6 +44,10 @@ class Wallpaper extends Component {
 
   getFontSize() {
     return this.fontSizes[this.state.fontSize];
+  }
+
+  getLocality() {
+    return this.state.units === 0 ? "de-DE" : "en-US";
   }
 
   render() {

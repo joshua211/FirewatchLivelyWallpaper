@@ -18,6 +18,12 @@
     "value": false,
     "text": "Show seconds"
   },
+  "units": {
+    "type": "dropdown",
+    "value": 0,
+    "text": "Unit system",
+    "items": ["Metric", "Imperial"]
+  },
 
   "fontLabel": {
     "type": "label",
