@@ -13,6 +13,7 @@ class Wallpaper extends Component {
       displayAtTop: false,
       units: 0,
       distance: 10,
+      justify: 1,
     };
   }
 
@@ -24,6 +25,7 @@ class Wallpaper extends Component {
     "font-raleway",
   ];
   fontSizes = ["text-3xl", "text-5xl", "text-6xl", "text-7xl"];
+  justify = ["justify-start", "justify-center", "justify-end"];
 
   componentDidMount() {
     document.addEventListener("propertiesChanged", (e) => {
@@ -57,14 +59,21 @@ class Wallpaper extends Component {
     }`;
   }
 
+  getJustifyContent() {
+    var j = this.state.justify;
+    return this.justify[j] + " " + (j === 0 ? " pl-12" : " pr-12");
+  }
+
   render() {
     return (
       <div className="w-screen h-screen">
         <img className="h-full w-full" src={firewatch} />
         <div
           className={
-            "absolute flex w-full justify-center items-center " +
-            this.getDistance()
+            "absolute flex w-full items-center " +
+            this.getDistance() +
+            " " +
+            this.getJustifyContent()
           }
         >
           {this.state.showTime && (

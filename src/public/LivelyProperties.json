@@ -22,9 +22,15 @@
     "type": "slider",
     "value": 12,
     "max": 60,
-    "min": 0,
+    "min": 4,
     "step": 4,
     "text": "Distance from screen border"
+  },
+  "justify": {
+    "type": "dropdown",
+    "value": 1,
+    "text": "Orientation",
+    "items": ["Left", "Center", "Right"]
   },
   "units": {
     "type": "dropdown",
