@@ -1,7 +1,38 @@
 {
+  "timeLabel": {
+    "type": "label",
+    "value": "Configure time display"
+  },
+  "showTime": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Display time"
+  },
   "displayAtTop": {
     "type": "checkbox",
     "value": false,
-    "text": "Display information at the top"
+    "text": "Display time at the top of the screen"
+  },
+  "showSeconds": {
+    "type": "checkbox",
+    "value": false,
+    "text": "Show seconds"
+  },
+
+  "fontLabel": {
+    "type": "label",
+    "value": "Choose a font"
+  },
+  "fontFamily": {
+    "type": "dropdown",
+    "value": 0,
+    "text": "Display font",
+    "items": ["Montserrat", "Nanum Gothic", "Prompt", "Quicksand", "Raleway"]
+  },
+  "fontSize": {
+    "type": "dropdown",
+    "value": 1,
+    "text": "Font size",
+    "items": ["Small", "Medium", "Large", "Max"]
   }
 }

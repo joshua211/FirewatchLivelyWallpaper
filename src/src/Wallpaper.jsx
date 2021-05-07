@@ -8,11 +8,20 @@ class Wallpaper extends Component {
       curTime: "",
       showSeconds: false,
       showTime: true,
-      fontFamily: "Montserrat",
-      fontSize: "Medium",
+      fontFamily: 0,
+      fontSize: 2,
       displayAtTop: false,
     };
   }
+
+  fonts = [
+    "font-montserrat",
+    "font-nanumgothic",
+    "font-prompt",
+    "font-quicksand",
+    "font-raleway",
+  ];
+  fontSizes = ["text-3xl", "text-5xl", "text-6xl", "text-7xl"];
 
   componentDidMount() {
     document.addEventListener("propertiesChanged", (e) => {
@@ -29,22 +38,11 @@ class Wallpaper extends Component {
   }
 
   getFontFamily() {
-    return "font-" + this.state.fontFamily.toLowerCase();
+    return this.fonts[this.state.fontFamily];
   }
 
   getFontSize() {
-    switch (this.state.fontSize) {
-      case "Small":
-        return "text-3xl";
-      case "Medium":
-        return "text-5xl";
-      case "Large":
-        return "text-6xl";
-      case "Max":
-        return "text-7xl";
-      default:
-        return "text-5xl";
-    }
+    return this.fontSizes[this.state.fontSize];
   }
 
   render() {

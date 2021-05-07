@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Live wallpaper for Lively" />
+    <!-- Does not seem to work in lively -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Nanum+Gothic:wght@400;700&family=Prompt:wght@300;400;500&family=Quicksand:wght@300;400;500;700&family=Raleway:wght@300;400;500;700&display=swap"
       rel="stylesheet"
@@ -17,6 +18,7 @@
     <div id="root"></div>
   </body>
 
+  <!-- Wrapping the lively property listener in a js event to access it in react -->
   <script>
     function livelyPropertyListener(name, val) {
       document.dispatchEvent(
