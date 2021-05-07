@@ -12,6 +12,7 @@ class Wallpaper extends Component {
       fontSize: 2,
       displayAtTop: false,
       units: 0,
+      distance: 10,
     };
   }
 
@@ -50,14 +51,20 @@ class Wallpaper extends Component {
     return this.state.units === 0 ? "de-DE" : "en-US";
   }
 
+  getDistance() {
+    return `${this.state.displayAtTop ? "top" : "bottom"}-${
+      this.state.distance
+    }`;
+  }
+
   render() {
     return (
       <div className="w-screen h-screen">
         <img className="h-full w-full" src={firewatch} />
         <div
           className={
-            "absolute flex h-24 w-full justify-center items-center " +
-            (this.state.displayAtTop ? " top-0" : "bottom-10")
+            "absolute flex w-full justify-center items-center " +
+            this.getDistance()
           }
         >
           {this.state.showTime && (

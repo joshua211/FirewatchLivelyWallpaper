@@ -18,6 +18,14 @@
     "value": false,
     "text": "Show seconds"
   },
+  "distance": {
+    "type": "slider",
+    "value": 12,
+    "max": 60,
+    "min": 0,
+    "step": 4,
+    "text": "Distance from screen border"
+  },
   "units": {
     "type": "dropdown",
     "value": 0,
