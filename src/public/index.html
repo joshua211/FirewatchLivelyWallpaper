@@ -16,4 +16,17 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
+
+  <script>
+    function livelyPropertyListener(name, val) {
+      document.dispatchEvent(
+        new CustomEvent("propertiesChanged", {
+          detail: {
+            name: name,
+            val: val,
+          },
+        })
+      );
+    }
+  </script>
 </html>

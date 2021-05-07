@@ -1,0 +1,7 @@
+{
+  "displayAtTop": {
+    "type": "checkbox",
+    "value": false,
+    "text": "Display information at the top"
+  }
+}

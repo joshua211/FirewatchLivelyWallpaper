@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         montserrat: ["Montserrat"],
-        nanumGothic: ["Nanum Gothic"],
+        nanumgothic: ["Nanum Gothic"],
         prompt: ["Prompt"],
         quicksand: ["Quicksand"],
         raleway: ["Raleway"],
